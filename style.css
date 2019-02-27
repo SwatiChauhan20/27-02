@@ -1,0 +1,61 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: lightgray;
+	height: 2000px;
+}
+body *{
+	box-sizing: border-box;
+}
+.mdc-top-app-bar{
+	background-color: black!important;
+}
+.mdc-card{
+	width: 50%;
+	background-image: linear-gradient(#ef0505fa,#f25b24);
+	margin: 0px auto;
+}
+.card-title{
+	margin-top: 66px;
+	font-size: 50px;
+	color: #ef0505fa;
+	text-align: center;
+	background-color: #ff9c78;
+
+}
+.main-content{
+	top: 40px;
+}
+.mdc-text-field{
+	margin: 20px 50px;
+	padding: 10px;
+	width:90%;
+	color: white;
+}
+#btn1{
+	background-color: black;
+	color: white;
+	padding: 10px;
+	border-radius: 5px; 
+}
+#btn2{
+	background-color: black;
+	color: white;
+	padding: 10px;
+	border-radius: 5px; 
+}
+.mdc-list{
+	background-image: linear-gradient(#ef0505fa,#f25b24);
+	color: black;
+}
+.mdc-menu{
+	margin-left: 91%;
+    margin-top: 70px;
+	position:absolute;
+}
+.d1{
+	padding: 50px;
+}
+.mdc-drawer{
+
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day9</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="mdc-top-app-bar app-bar" id="app-bar">
+		<div class="mdc-top-app-bar__row">
+			<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+
+				<a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+				<span class="mdc-top-app-bar__title">Dashboard</span>
+
+			</section>
+			<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+				<a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page" id="btn">account_circle</a>
+				<a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" 
+				alt="Bookmark this page" id="menu">more_vert</a>
+			</section>
+		</div>
+	</header>
+	<!-- menu -->
+	<div class="mdc-menu mdc-menu-surface" tabindex="-1">
+		<ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+			<li class="mdc-list-item" role="menuitem">
+				<span class="mdc-list-item__text">Back</span>
+			</li>
+			<li class="mdc-list-item" role="menuitem">
+				<span class="mdc-list-item__text">forward</span>
+			</li>
+			<li class="mdc-list-item" role="menuitem">
+				<span class="mdc-list-item__text">Reload</span>
+			</li>
+			<hr>
+			<li class="mdc-list-item" role="menuitem">
+				<span class="mdc-list-item__text">Save as</span>
+			</li>
+			<li class="mdc-list-item" role="menuitem">
+				<span class="mdc-list-item__text">Print</span>
+			</li>
+			<li class="mdc-list-item" role="menuitem">
+				<span class="mdc-list-item__text">Translate</span>
+			</li>
+			<hr>
+			<li class="mdc-list-item" role="menuitem">
+				<span class="mdc-list-item__text">view page source</span>
+			</li>
+			<li class="mdc-list-item" role="menuitem">
+				<span class="mdc-list-item__text">inspect</span>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+<!-- drawer -->
+<aside class="mdc-drawer mdc-drawer--dismissible">
+
+	<div class="mdc-drawer__content">
+		<div class="mdc-list">
+			<img src="gmail.png" alt="logo" height="80px" width="auto">
+			<div class="mdc-drawer__header">
+				<h3 class="mdc-drawer__title">Gmail</h3>
+				<h6 class="mdc-drawer__subtitle">chauhan.swati@gmail.com</h6>
+			</div>
+			<a class="mdc-list-item mdc-list-item--activated" href="#" aria-selected="true">
+				<i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+				<span class="mdc-list-item__text">Home</span>
+			</a>
+			<a class="mdc-list-item" href="#">
+				<i class="material-icons mdc-list-item__graphic" aria-hidden="true">collections</i>
+				<span class="mdc-list-item__text">Gallery</span>
+			</a>
+			<a class="mdc-list-item" href="#">
+				<i class="material-icons mdc-list-item__graphic" aria-hidden="true">comment</i>
+				<span class="mdc-list-item__text">Feedback</span>
+			</a>
+		</div>
+	</div>
+</aside>
+<div class="mdc-drawer-app-content mdc-top-app-bar-fixed-adjust">
+	<main class="main-content" id="main-content">
+		<div class="mdc-card">
+			<h2 class="card-title">Registration</h2>
+			<!-- <div class="mdc-text-field myText1">
+				<input class="mdc-text-field__input" type="text" id="myText11" aria-label="Property Name">
+				<label for="my-text-field" class="mdc-floating-label">FullName</label>
+				<div class="mdc-line-ripple"></div>
+			</div> -->
+			<div class="mdc-text-field mdc-text-field--outlined myText1">
+				<input type="text" id="tf-outlined" class="mdc-text-field__input">
+				<div class="mdc-notched-outline">
+					<div class="mdc-notched-outline__leading"></div>
+					<div class="mdc-notched-outline__notch">
+						<label for="tf-outlined" class="mdc-floating-label">Full Name</label>
+					</div>
+					<div class="mdc-notched-outline__trailing"></div>
+				</div>
+			</div>
+			<div class="mdc-text-field mdc-text-field--outlined myText2">
+				<input type="text" id="tf-outlined" class="mdc-text-field__input">
+				<div class="mdc-notched-outline">
+					<div class="mdc-notched-outline__leading"></div>
+					<div class="mdc-notched-outline__notch">
+						<label for="tf-outlined" class="mdc-floating-label">Email</label>
+					</div>
+					<div class="mdc-notched-outline__trailing"></div>
+				</div>
+			</div>
+			<div class="mdc-text-field mdc-text-field--outlined myText3">
+				<input type="text" id="tf-outlined" class="mdc-text-field__input">
+				<div class="mdc-notched-outline">
+					<div class="mdc-notched-outline__leading"></div>
+					<div class="mdc-notched-outline__notch">
+						<label for="tf-outlined" class="mdc-floating-label">Password</label>
+					</div>
+					<div class="mdc-notched-outline__trailing"></div>
+				</div>
+			</div>
+			<div class="mdc-text-field mdc-text-field--outlined myText4">
+				<input type="text" id="tf-outlined" class="mdc-text-field__input">
+				<div class="mdc-notched-outline">
+					<div class="mdc-notched-outline__leading"></div>
+					<div class="mdc-notched-outline__notch">
+						<label for="tf-outlined" class="mdc-floating-label">Mobile</label>
+					</div>
+					<div class="mdc-notched-outline__trailing"></div>
+				</div>
+			</div>
+			<div class="mdc-layout-grid">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-4"></div>
+					<div class="mdc-layout-grid__cell--span-4">
+						<button class="mdc-button">
+							<span class="mdc-button__label myButton1" id="btn1">Submit</span>
+						</button>
+						<button class="mdc-button">
+							<span class="mdc-button__label myButton2" id="btn2">Cancel</span>
+						</button>
+					</div>
+					<div class="mdc-layout-grid__cell--span-4"></div>
+				</div>
+			</div>
+			
+		</div>
+	</main>
+</div>
+<!-- snackbar -->
+<div class="mdc-snackbar">
+	<div class="mdc-snackbar__surface">
+		<div class="mdc-snackbar__label" role="status" aria-live="polite">
+			Data Saved Successfully...
+		</div>
+		<div class="mdc-snackbar__actions">
+			<button type="button" class="mdc-button mdc-snackbar__action">close</button>
+		</div>
+	</div>
+</div>
+<!-- dialog -->
+<div class="mdc-dialog d1" id="dialog_box" role="alertdialog" aria-modal="true" aria-labelledby="my-dialog-title" aria-describedby="my-dialog-content">
+	<div class="mdc-dialog__container">
+		<div class="mdc-dialog__surface">
+			<h2 class="mdc-dialog__title" id="my-dialog-title">Login</h2>
+			<div class="mdc-dialog__content" id="my-dialog-content">
+				<div class="mdc-text-field user">
+					<input type="text"  id="UserName" class="mdc-text-field__input">
+					<label class="mdc-floating-label" for="my-text-field">UserName</label>
+					<div class="mdc-line-ripple"></div>
+				</div><br>
+				<div class="mdc-text-field pass">
+					<input type="text"  id="password" class="mdc-text-field__input">
+					<label class="mdc-floating-label" for="my-text-field">Password</label>
+					<div class="mdc-line-ripple"></div>
+				</div>
+				<footer class="mdc-dialog__actions">
+					<button type="button" class="mdc-button mdc-dialog__button b1"  data-mdc-dialog-action="no">
+						<span class="mdc-button__label">Cancel</span>
+					</button>
+					<button type="button" class="mdc-button mdc-dialog__button b1" id="btn1" data-mdc-dialog-action="yes">
+						<span class="mdc-button__label">Submit</span>
+					</button>
+				</footer>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dialog -->
+<div class="mdc-dialog d1" id="dialog_box" role="alertdialog" aria-modal="true" aria-labelledby="my-dialog-title" aria-describedby="my-dialog-content">
+	<div class="mdc-dialog__container">
+		<div class="mdc-dialog__surface">
+			<h2 class="mdc-dialog__title" id="my-dialog-title">Login</h2>
+			<div class="mdc-dialog__content" id="my-dialog-content">
+				<div class="mdc-text-field">
+					<input type="text"  id="UserName" class="mdc-text-field__input">
+					<label class="mdc-floating-label" for="my-text-field">UserName</label>
+					<div class="mdc-line-ripple"></div>
+				</div><br>
+				<div class="mdc-text-field">
+					<input type="text"  id="password" class="mdc-text-field__input">
+					<label class="mdc-floating-label" for="my-text-field">Password</label>
+					<div class="mdc-line-ripple"></div>
+				</div>
+				<footer class="mdc-dialog__actions">
+					<button type="button" class="mdc-button mdc-dialog__button b2" data-mdc-dialog-action="no">
+						<span class="mdc-button__label">Cancel</span>
+					</button>
+					<button type="button" class="mdc-button mdc-dialog__button b1" data-mdc-dialog-action="yes">
+						<span class="mdc-button__label" onclick="getName()">Submit</span>
+					</button>
+				</footer>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>		
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script type="text/javascript" src="custom.js"></script> 
+</body>
+</html>
